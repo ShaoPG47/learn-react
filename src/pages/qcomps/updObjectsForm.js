@@ -8,7 +8,9 @@ export default function Scoreboard() {
   });
 
   function handlePlusClick() {
-    player.likescore++;
+    // player.likescore++;
+    const newLikescore = {...player, likescore: player.likescore + 1}
+    setPlayer(newLikescore)
   }
 
   function handleFirstNameChange(e) {
